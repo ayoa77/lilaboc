@@ -1,0 +1,15 @@
+default: &default
+  project_id: ENV["gcloud_project_id"]
+  cloud_storage:
+    bucket: ENV["gcloud_project_id"]
+    access_key_id: ENV["gcloud_access_key"]
+    secret_access_key: ENV["gcloud_secret"]
+  oauth2:
+    client_id: @@CLIENT@@
+    client_secret: @@SECRET@@
+
+development:
+  <<: *default
+
+production:
+  <<: *default
