@@ -5,8 +5,8 @@ default: &default
     access_key_id: ENV["gcloud_access_key"]
     secret_access_key: ENV["gcloud_secret"]
   oauth2:
-    client_id: @@CLIENT@@
-    client_secret: @@SECRET@@
+    client_id: ENV["gcloud_client"]
+    client_secret: ENV["gcloud_pass"]
 
 development:
   <<: *default
