@@ -83,4 +83,4 @@ production:
   <<: *default
   database: lilaboc_production
   username: lilaboc
-  password: <%= ENV['LILABOC_DATABASE_PASSWORD'] %>
+  password: blinkblink

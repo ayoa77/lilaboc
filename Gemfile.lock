@@ -192,6 +192,7 @@ DEPENDENCIES
   pg (~> 0.18)
   puma (~> 3.0)
   rails (~> 5.0.3)
+  rake
   resque
   sass-rails (~> 5.0)
   spring
