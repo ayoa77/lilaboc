@@ -1,11 +1,11 @@
 default: &default
-  project_id: ENV["gcloud_project_id"]
+  project_id: lilaboc-170106
   cloud_storage:
-    bucket: ENV["gcloud_project_id"]
-    access_key_id: ENV["gcloud_access_key"]
-    secret_access_key: ENV["gcloud_secret"]
+    bucket: lilaboc-170106
+    access_key_id: GOOGBWJ7HUPQT62AGROO
+    secret_access_key: 1Srzm1mZJTef5bf6vYtJ215Umq5EgMOtnIK7Pfr6
   oauth2:
-    client_id: ENV["gcloud_client"]
+    client_id: ayodeleamadi@gmail.com
     client_secret: ENV["gcloud_pass"]
 
 development:
