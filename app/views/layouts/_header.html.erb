@@ -1,13 +1,63 @@
-<nav class="nav navbar navbar-toggle-md navbar-fixed-top", style="background-color: #333">
-  <div class="container">
-    #logo link to home
-    <ul class="nav navbar-brand navbar-nav navbar-left">
-    <li> <%= link_to "BOC", root_path, class: "navbar-link" %> </li>
-  </ul>
-  <ul class="nav navbar-nav navbar-brand navbar-right">
-    <li> <%= link_to "about", about_path_url, class: "navbar-link" %> </li>
-    <li> <%= link_to "gallery", gallery_path_url, class: "navbar-link" %> </li>
-    <li> <%= link_to "contact", contact_path_url, class: "navbar-link" %> </li>
-  </ul>
-  </div>
+
+<nav id="navbar" class="nav navbar navbar-toggleable navbar-nav fixed-top">
+    <div id="logo" class="col-sm-2">
+        <%= link_to root_path, id:"red-logo", class: "navbar-link navbar-brand box-logo" do %>
+        <%= image_tag 'box_of_chocolates/logo.png' %>
+        <% end %>
+    </div>
+    <div id="home" class="col-sm-2 box-link">
+        <a href="/" class="navbar-link redText">Home</a>
+    </div>
+    <div id="gallery" class="col-sm-2 box-link">
+        <a href="/gallery" class="navbar-link redText">Gallery</a>
+    </div>
+    <div id="reviews" class="col-sm-2 box-link">
+        <a href="/review" class="navbar-link redText">Reviews</a>
+    </div>
+    <div id="about" class="col-sm-2 box-link">
+        <a href="/about" class="navbar-link redText">About</a>
+    </div>
+    <div id="contact" class="col-sm-2 box-link">
+        <a href="/contact" class="navbar-link redText">Contact Us</a>
+    </div>
+    <div id="nav-icon1" class=" open-burger col-sm-1">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 </nav>
+<!-- mobile navbar -->
+<div id="m-nav" class="active active-inner">
+  <nav class="nav">
+    <ul>
+      <li><a href="/" class="navbar-link redText">Home</a></li>
+      <li><a href="/gallery" class="navbar-link redText">Gallery</a></li>
+      <li><a href="/review" class="navbar-link redText">Reviews</a></li>
+      <li><a href="/about" class="navbar-link redText">About</a></li>
+      <li><a href="/contact" class="navbar-link redText">Contact Us</a></li>
+    </ul>
+  </nav>
+</div>
+<% if current_page?('/') %>
+<div class="index-bg">
+
+    <div class="box-up"></div>
+    <div class="over-box-text">
+        <p>an international</p>
+        <p>CO-LIVING HOUSE</p>
+    </div>
+</div>
+<% elsif current_page?('/about')%>
+<div class="index-bg about">
+
+    <div class="box-up about"></div>
+    <div class="over-box-text about">
+        <p>Life is like a</p>
+        <p>box of chocolates,</p>
+        <p>you never know what</p>
+        <p>you're gonna get.</p>
+    </div>
+</div>
+<% end %>
+
+<footer class="footer fixed-bottom"></footer>
