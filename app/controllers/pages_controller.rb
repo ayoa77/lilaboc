@@ -4,13 +4,15 @@ class PagesController < ApplicationController
   # GET /pages
   # GET /pages.json
   def index
-    @pages = Page.all
   end
 
   def about
   end
 
   def contact
+  end
+
+  def review
   end
 
   def gallery

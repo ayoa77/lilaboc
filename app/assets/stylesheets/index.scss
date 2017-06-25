@@ -1,11 +1,307 @@
-.jumbotron {
-  padding-top: 0px;
-  font-family: 'Big Caslon';
-  background: image-url("/app/assets/images/restaurant-2312430_1280.jpg");
-  width: auto;
-  height: 550px;
-  background-repeat:no-repeat;
-  background-position: center;
-  background-size:cover;
+.box-up {
+    width: 409px;
+    height: 409px;
+    left: -14%;
+    bottom: -53%;
+    position: relative;
+    background-color: rgba(157, 10, 14, 0.5);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5);
+    /*for IE*/
+}
 
+.over-box-text {
+    bottom: -43%;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'lora', serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3em;
+    padding: auto;
+}
+
+.index-bg {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    top: -70px;
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+    background-image: url("box-photos/Photos (unedited)/26-Balcony-View-rainbow.jpg");
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+// .index-bg:after {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background-image: url("box_of_chocolates/place_holders/friends_hostel.jpg");
+//     width: 100%;
+//     height: auto;
+//     opacity: 0.7;
+//     z-index: -1;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+// }
+// Room Descriptions
+.var-amenities {
+  height:100%;
+    min-height: 100%;
+    position: relative;
+    overflow-y: hidden;
+    top: -70px;
+    margin: 10px auto;
+}
+
+.var-amenities.open-index {
+  height:130%
+}
+
+.var-rooms {
+    position: relative;
+    overflow: hidden;
+}
+
+.row.var-rooms.open-row {
+    left: 160px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 22%;
+    transition: 1s;
+}
+
+.row.var-rooms.closed-row {
+    margin: 15px;
+    height: 22%;
+    transition: 1s;
+}
+
+.index-box {
+    width: 300px;
+    height: 300px;
+    margin-left: -200px;
+    margin-top: -100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5);
+    /*for IE*/
+}
+
+.index-box-text {
+    left: -25%;
+    bottom: -34px;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'lora', serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    padding: auto;
+}
+
+.row.hidden-index-text {
+    position: relative;
+    display: none;
+    font-family: 'lora', serif;
+    margin-top: -15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 30%;
+    background-color: rgb(211, 221, 241);
+    transition: 1s;
+}
+.row.hidden-index-text.open-row {
+    left: 160px;
+    margin-bottom: 15px;
+    transition: 1s;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row.hidden-index-text > p {
+    margin-left: 30px;
+    left: -15px;
+    line-height: 0.7;
+    text-align: left;
+}
+
+.row.hidden-index-text > p:first-child {
+    padding-top: 10px;
+}
+
+.row.hidden-index-text > a {
+    color: black;
+    text-align: right;
+    position: absolute;
+    right: 10%;
+}
+
+.hidden-index-text.show-text {
+    display: block;
+}
+
+.private-index-img {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("box-photos/Photos (unedited)/24-Double-Bed-private-room.jpg");
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.shared-index-img {
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("box-photos/Photos (unedited)/12-8-Bed-Dorm.jpg");
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.common-index-img {
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("box-photos/Photos (unedited)/01-Common-Space-1.jpg");
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#private {}
+
+#shared {}
+
+#common {}
+@media screen and (min-width: 359px) {
+    .box-up {
+        left: -7%;
+        bottom: -47%;
+    }
+
+    .index-bg {
+        height: 180px;
+    }
+}
+@media screen and (min-width: 374px) {
+    .box-up {
+        left: -4.5%;
+        bottom: -45.5%;
+    }
+
+    .index-bg {
+        height: 187.5px;
+    }
+
+    .index-box-text {
+        left: -27%;
+        bottom: -38px;
+    }
+}
+@media screen and (min-width: 411px) {
+    .box-up {
+        left: 0;
+        bottom: -41%;
+    }
+
+    .index-bg {
+        height: 206px;
+    }
+
+    .index-box-text {
+        left: -28%;
+        bottom: -48px;
+    }
+
+    .index-box {
+        margin-left: -184px;
+        margin-top: -87px;
+    }
+
+    .row.hidden-index-text > p:first-child {
+        padding-top: 37px;
+    }
+}
+@media screen and (min-width: 767px) {
+    .box-up {
+        height: 800px;
+        width: 800px;
+        bottom: -43%;
+        left: -2.5%;
+    }
+
+    .index-bg {
+        height: 383.5px;
+    }
+
+    .index-box {
+        margin-left: -250px;
+        margin-top: -159px;
+        height: 500px;
+        width: 500px;
+    }
+
+    .index-box-text {
+        left: -27%;
+        bottom: -75px;
+    }
+
+    .row.hidden-index-text > p:first-child {
+        padding-top: 47px;
+    }
+
+    .row.hidden-index-text > p {
+        margin-left: 95px;
+        line-height: 1;
+        margin-left: 95px;
+    }
+
+    .row.hidden-index-text > a {
+        bottom: 20%;
+    }
+}
+@media screen and (min-width: 992px) {
+    /* Styles */
+    .box-up {
+        width: 1000px;
+        height: 1000px;
+        bottom: -41%;
+        left: 1.5%;
+    }
+
+    .index-bg {
+        height: 512px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .box-up {
+        left: 15.5%;
+    }
 }

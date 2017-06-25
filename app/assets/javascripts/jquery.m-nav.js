@@ -1,0 +1,22 @@
+$(document).on('turbolinks:load', function(){
+	$('#nav-icon1').click(function(){
+    $(this).toggleClass('open');
+    $('#m-nav').toggleClass('left');
+		$('#logo').toggleClass('open-logo')
+		$('#body').toggleClass('open-body')
+		$('#navbar').toggleClass('navigation')
+		$('.var-amenities').toggleClass('open-index')
+		$('.row.var-rooms').toggleClass('open-row')
+		$('.row.var-rooms').toggleClass('closed-row')
+		$('.row.hidden-index-text').toggleClass('open-row')
+	});
+	$('#private').click(function(){
+		  $('#private-text').toggleClass('show-text');
+});
+$('#shared').click(function(){
+		$('#shared-text').toggleClass('show-text');
+});
+$('#common').click(function(){
+		$('#common-text').toggleClass('show-text');
+});
+});

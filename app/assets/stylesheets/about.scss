@@ -1,0 +1,149 @@
+.box-up.about {
+  width: 75vw;
+height: 75vw;
+left: 47%;
+bottom: 26%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5);
+    /*for IE*/
+}
+
+.over-box-text.about {
+    bottom: -43%;
+    position: absolute;
+    color: rgba(14, 14, 14, 1);
+    font-family: 'lora', serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3em;
+    padding: auto;
+    z-index:2;
+}
+
+.index-bg.about {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    top: -70px;
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+    background-image: url("box-photos/Photos (unedited)/Box-of-Chocolates.jpg");
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+@media screen and (min-width: 359px) {
+    .box-up.about {
+        left: -7%;
+        bottom: -47%;
+    }
+
+    .index-bg {
+        height: 180px;
+    }
+}
+@media screen and (min-width: 374px) {
+    .box-up.about {
+        left: -4.5%;
+        bottom: -45.5%;
+    }
+
+    .index-bg {
+        height: 187.5px;
+    }
+
+    .index-box-text {
+        left: -27%;
+        bottom: -38px;
+    }
+}
+@media screen and (min-width: 411px) {
+    .box-up.about {
+        left: 0;
+        bottom: -41%;
+    }
+
+    .index-bg.about {
+        height: 206px;
+    }
+
+    .index-box-text {
+        left: -28%;
+        bottom: -48px;
+    }
+
+    .index-box {
+        margin-left: -184px;
+        margin-top: -87px;
+    }
+
+    .row.hidden-index-text > p:first-child {
+        padding-top: 37px;
+    }
+}
+@media screen and (min-width: 767px) {
+    .box-up.about {
+        height: 800px;
+        width: 800px;
+        bottom: -43%;
+        left: -2.5%;
+    }
+
+    .index-bg.about {
+        height: 383.5px;
+    }
+
+    .index-box {
+        margin-left: -250px;
+        margin-top: -159px;
+        height: 500px;
+        width: 500px;
+    }
+
+    .index-box-text {
+        left: -27%;
+        bottom: -75px;
+    }
+
+    .row.hidden-index-text > p:first-child {
+        padding-top: 47px;
+    }
+
+    .row.hidden-index-text > p {
+        margin-left: 95px;
+        line-height: 1;
+        margin-left: 95px;
+    }
+
+    .row.hidden-index-text > a {
+        bottom: 20%;
+    }
+}
+@media screen and (min-width: 992px) {
+    /* Styles */
+    .box-up.about {
+        width: 1000px;
+        height: 1000px;
+        bottom: -41%;
+        left: 1.5%;
+    }
+
+    .index-bg.about {
+        height: 512px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .box-up.about {
+        left: 15.5%;
+    }
+}
