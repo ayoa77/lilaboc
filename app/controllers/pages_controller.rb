@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_action :set_page, only: [:show, :edit, :update, :destroy]
+  before_action :set_page, only: [:show, :update, :destroy]
 
   # GET /pages
   # GET /pages.json
@@ -16,6 +16,13 @@ class PagesController < ApplicationController
   end
 
   def gallery
+    # @gallery = Dir.glob("#{Rails.root}/app/assets/images/box-photos/photos(unedited)/*.jpg")
+    # @gallerylist = []
+    # @gallery.each_with_index do |s, ind| g = s.gsub("/Users/ayoamadi/Documents/Projects/lilaboc/app/assets/images/",'')
+    #   @gallerylist << "<li data-target='#carousel-custom' data-slide-to=#{ind}><%= image_tag '#{g}'%></li>"
+    #
+    # end
+    # @gallerylist = @gallerylist.join
   end
   # GET /pages/1
   # GET /pages/1.json

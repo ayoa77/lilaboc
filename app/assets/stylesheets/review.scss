@@ -1,4 +1,4 @@
-.box-up.about {
+.box-up.review {
     width: 75vw;
     height: 75vw;
     left: 47%;
@@ -12,7 +12,7 @@
     /*for IE*/
 }
 
-.over-box-text.about {
+.over-box-text.review {
     bottom: 0;
     right: 4vw;
     position: absolute;
@@ -27,7 +27,7 @@
     z-index: 21;
 }
 
-.index-bg.about {
+.index-bg.review {
     position: relative;
     margin-left: 0;
     margin-right: 0;
@@ -41,26 +41,29 @@
     background-position: center;
     background-size: cover;
 }
-.row.about{
+.review-content{
+    background-color: rgb(211, 221, 241);
+}
+.row.review{
   font-family: verdana
 }
-.row.about.chocolate-img img{
+.row.review.chocolate-img img{
   margin: 30px auto;
   width: 111px;
   height: 93px;
 
 }
-.row.about.headline p{
+.row.review.headline p{
   color: black;
   text-align: center;
 }
-.row.about b{
+.row.review b{
   margin-top: 75px;
   text-align: center;
   font-size: 1.2em;
   margin: 15px auto;
 }
-.row.about p{
+.row.review p{
   font-size: 0.9em;
   margin-bottom: 0;
   margin-left: 40px;
@@ -69,7 +72,7 @@
   color: gray;
   line-height: 2em;
 }
-.container.about {
+.container.review {
 top:-35px;
 height: auto;
 min-height: 100%;}
@@ -89,14 +92,14 @@ min-height: 100%;}
     }
 }
 @media screen and (min-width: 411px) {
-    .over-box-text.about {
+    .over-box-text.review {
         bottom: 0;
         right: 7vw;
         line-height: 0.7;
         font-size: 1.3em;
     }
 
-    .index-bg.about {
+    .index-bg.review {
         height: 206px;
     }
 
@@ -115,21 +118,21 @@ min-height: 100%;}
     }
 }
 @media screen and (min-width: 767px) {
-    .over-box-text.about {
+    .over-box-text.review {
         bottom: 7%;
         right: 11vw;
         line-height: 1;
         font-size: 1.7em;
     }
 
-    .box-up.about {
+    .box-up.review {
         height: 800px;
         width: 800px;
         left: 53%;
         bottom: 57%;
     }
 
-    .index-bg.about {
+    .index-bg.review {
         height: 383.5px;
     }
 
@@ -161,33 +164,33 @@ min-height: 100%;}
 }
 @media screen and (min-width: 992px) {
     /* Styles */
-    .over-box-text.about {
+    .over-box-text.review {
         bottom: 7%;
         right: 11vw;
         line-height: 1;
         font-size: 1.7em;
     }
 
-    .box-up.about {
+    .box-up.review {
         height: 800px;
         width: 800px;
     left: 64%;
             bottom: 31%;
     }
 
-    .index-bg.about {
+    .index-bg.review {
         height: 512px;
     }
 }
 @media screen and (min-width: 1200px) {
-    .over-box-text.about {
+    .over-box-text.review {
         bottom: 7%;
         right: 11vw;
         line-height: 1;
         font-size: 1.7em;
     }
 
-    .box-up.about {
+    .box-up.review {
         height: 800px;
         width: 800px;
             left: 64%;
