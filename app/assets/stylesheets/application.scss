@@ -1,0 +1,431 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+
+html {
+  position: relative;
+  min-height: 100%;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+  height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    font-size: 100%;
+    font-family: helvetica;
+    background: #ffffff;
+    margin-top: 70px;
+    margin-bottom: 82.5px;
+  }
+  body.height-important{
+    height:auto;
+  }
+
+.m-nav {
+    display: block;
+}
+// needs to be adapted to work with safari and IE
+#navbar{pointer-events: none;
+  background: linear-gradient(180deg, rgba(248, 229, 183, 0) 50%, transparent 50%);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+#red-logo, #nav-icon1, .box-link, .box-logo{pointer-events: auto}
+
+#mobile-header {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+#navbar.navigation {
+    height: 70px;
+    background: linear-gradient(180deg, rgba(248, 229, 183, 1) 50%, transparent 50%);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+#navbar.navigation-scroll {
+    height: 70px;
+    background: linear-gradient(180deg, rgba(248, 229, 183, 1) 50%, transparent 50%);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+#navbar.navigation-gallery {
+    height: 70px;
+    background: linear-gradient(180deg, rgba(248, 229, 183, 1) 50%, transparent 50%);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.open-logo {
+    left: 38px;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.open-burger {}
+
+.open-body {
+  left: 160px;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#nav-icon1 {
+    display: none;
+    z-index: 99999;
+    width: 37px;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: #9d0a0e;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+    top: 12px;
+}
+
+#nav-icon1 span:nth-child(2) {
+    top: 22px;
+}
+
+#nav-icon1 span:nth-child(3) {
+    top: 32px;
+}
+
+.navigation-scroll #nav-icon1 span:nth-child(1) {
+    top: -3px;
+}
+
+.navigation-scroll #nav-icon1 span:nth-child(2) {
+    top: 7px;
+}
+
+.navigation-scroll #nav-icon1 span:nth-child(3) {
+    top: 17px;
+}
+
+.navigation-gallery #nav-icon1 span:nth-child(1) {
+    top: -3px;
+}
+
+.navigation-gallery #nav-icon1 span:nth-child(2) {
+    top: 7px;
+}
+
+.navigation-gallery #nav-icon1 span:nth-child(3) {
+    top: 17px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+    top: 8px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+    top: 8px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.top5 {
+    margin-top: 5%;
+}
+
+.top7 {
+    margin-top: 7%;
+}
+
+.top10 {
+    margin-top: 10%;
+}
+
+.top15 {
+    margin-top: 15%;
+}
+
+.top17 {
+    margin-top: 17%;
+}
+
+.top30 {
+    margin-top: 30%;
+}
+
+.container.no-gutter,
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container.no-gutter [class*='col-']:not(:first-child),
+.container.no-gutter [class*='col-']:not(:last-child) .row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#red-logo {
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .red-logo {
+        left: -5vw;
+        z-index: 11;
+    }
+
+    #red-logo:hover > a {
+        opacity: 0.7;
+    }
+}
+
+a.redText {
+    text-transform: uppercase;
+    color: #9d0a0e;
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 1em;
+    top: -4vh;
+}
+
+a.redText:focus,
+a.redText:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #cd3f42;
+}
+
+.box {
+    height: 375px;
+    width: 70%;
+    background: rgba(34, 34, 34, 0.3);
+    position: absolute;
+    top: 50%;
+    /*Centering Method 2*/
+    margin: 0 0 0 -35%;
+    /* Half of 70% */
+    left: 50%;
+}
+
+.chocolatesqr{
+content:url(app/assets/images/box_of_chocolates/illustrations/chocolate_square.png)
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #f8e5b7;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #303030;
+    padding: 0;
+    width:70%;
+    z-index: -1;
+}
+
+.box-link {
+    transform: translate(64px,-64px);
+    text-align: -webkit-center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+textarea {
+    min-height: 250px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+html {
+    font-size: 14px;
+}
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+
+    #red-logo {
+        left: -5vw;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+@media screen and (max-width: 769px) {
+  #nav-icon1 {
+        display: block;
+    }
+
+    .box-link {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+  footer{
+    height: 82.5px;
+  }
+  body:{
+    margin-bottom: 165px;
+  }
+  html {
+    font-size: 16px;
+  }
+.col-sm-2.box-link{
+  left: -15px;
+  top: 15px;
+}
+    .box-link {
+        transform: translate(0, -40px);
+    }
+
+    #red-logo {
+        left: -5vw;
+
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+@media screen and (min-width: 799px) {
+  #navbar.navigation-scroll {
+      height: 100px;}
+    #navbar.navigation-gallery{
+        height: 100px;}
+      }
+
+@media screen and (min-width: 992px) {
+  #navbar.navigation-scroll {
+      height: 130px;}
+  #navbar.navigation-gallery {
+      height: 130px;}
+
+    html {
+        font-size: 18px;
+    }
+
+    .box-link {
+        transform: translate(33px, -64px);
+    }
+
+    #red-logo {
+        left: -5vw;
+
+        img {
+            width: 125px;
+            height: 125px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+  #navbar.navigation-scroll {
+      height: 157px;
+    }
+    #navbar.navigation-gallery {
+        height: 157px;
+      }
+    html {
+        font-size: 20px;
+    }
+    .col-sm-2.box-link{
+      left: -50px;
+    }
+
+    .box-link {
+        transform: translate(50px, -72px);
+    }
+
+    #red-logo {
+        left: -5vw;
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
