@@ -39,22 +39,9 @@
     background-position: center;
     background-size: cover;
 }
-// .index-bg:after {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     background-image: url("box_of_chocolates/place_holders/friends_hostel.jpg");
-//     width: 100%;
-//     height: auto;
-//     opacity: 0.7;
-//     z-index: -1;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-// }
-// Room Descriptions
+
+
+
 .var-amenities {
   height:100%;
     min-height: 100%;
@@ -111,24 +98,6 @@
     padding: auto;
 }
 
-.hiddenMobile.hidden-index-text {
-    position: relative;
-    display: none;
-    font-family: 'lora', serif;
-    margin-top: -15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    height: 30%;
-    background-color: rgb(211, 221, 241);
-    transition: 1s;
-}
-.hiddenMobile.hidden-index-text.open-row {
-    left: 160px;
-    margin-bottom: 15px;
-    transition: 1s;
-    margin-left: -15px;
-    margin-right: -15px;
-}
 .hiddenMobile.hidden-index-text > p {
     margin-left: 30px;
     left: -15px;
@@ -185,6 +154,24 @@
 #shared {}
 
 #common {}
+.hiddenMobile.hidden-index-text {
+  position: relative;
+  display: none;
+  font-family: 'lora', serif;
+  margin-top: -15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 30%;
+  background-color: rgb(211, 221, 241);
+  transition: 1s;
+}
+.hiddenMobile.hidden-index-text.open-row {
+  left: 160px;
+  margin-bottom: 15px;
+  transition: 1s;
+  margin-left: -15px;
+  margin-right: -15px;
+}
 .private-index-img {
   position: absolute;
   margin: 0;
@@ -273,7 +260,6 @@
     }
 
     .hiddenMobile.hidden-index-text > p {
-        margin-left: 95px;
         line-height: 1;
         margin-left: 95px;
     }
@@ -286,11 +272,42 @@
     .private-index-img.top{
       opacity:1;
     }
+    .roomColumn.col-lg-6{
+      height:33%;
+        width: 100%;}
+      .first.roomColumn.col-lg-6{padding-left: 0px;}
+      .second.roomColumn.col-lg-6{padding-right:0px;}
+
+    .hiddenMobile.hidden-index-text.top {
+display:block;
+background-color:white;
+margin-top: 0px;
+margin-left: 0px;
+margin-right: 0px;
+height: 33%;
+    }
+    .hiddenMobile.hidden-index-text.top > p {
+        line-height: 0.7;
+        margin-left: 30px;
+    }
+    .hiddenMobile.hidden-index-text.top > p:first-child {
+        padding-top: 20px;
+    }
+    .hiddenMobile.hidden-index-text > a {
+        bottom: 55%;
+right: 0%;
+font-size: medium;
+    }
+.var-rooms.closed-row.top {height:33%}
+.var-rooms.closed-row{ height:33%;   width: 100%;}
     .index-box.hidden{
       display:none;
     }
     .index-box-text.hidden{
       display:none;
+    }
+    .var-rooms.closed-row {
+        height: 100%;
     }
     .box-up.index {
         width: 1000px;
