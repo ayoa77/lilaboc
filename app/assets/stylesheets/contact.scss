@@ -1,0 +1,110 @@
+.reservation{text-align: center;
+  display:none;}
+  .reservation.selected{display:block;
+  }
+  .comment{text-align: center;
+  display: none;}
+  .comment.selected{
+    display: block;
+  }
+.contact-container.container{
+  overflow: hidden;
+  top: -35px;
+}
+.contact-info{margin:15px auto;}
+.connect.contact {
+background-color: rgb(157, 157, 157);
+color:rgb(157, 10, 14);
+}
+
+.contact.mobile{
+  position:relative;
+  padding-right: 0px;
+  padding-left: 0px;
+  display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+}
+.additional-information.row{
+  margin: 24px auto;
+  padding-left: 15px;
+  padding-right: 15px;}
+
+.connect.contact {
+background-color: rgb(210, 210, 210);
+color:rgb(157, 10, 14);
+width:100%;
+}
+.connect i {
+  font-size: 24px;
+  color:#4c75c8;}
+#map{
+  top: -35px;
+  height:100vw;
+  width:auto;
+}
+.contact.btn-primary{
+  background-color: rgb(157, 10, 14);
+  border-color: rgb(157, 10, 14);
+}
+.fa.fa-location-arrow{
+  vertical-align: top;
+  margin-top: 18px;}
+.contact-info p{
+padding-left:24px;    display: inline-block;}
+.contact-form{margin-top: 50px;}
+.form-group{
+  position: relative;
+display: -webkit-inline-box;
+display: -webkit-inline-flex;
+display: -ms-inline-flexbox;
+display: inline-flex;
+vertical-align: middle;
+}
+.form-control.name-email{
+  display: inline-block;
+}
+
+.private-shared.radio.select {
+   background-color: #9d0a0e;
+   color: white;
+}
+
+.private-shared.radio:hover{
+  opacity: 0.8;
+}
+#shrdbtn.radio.private-shared{border-left: 0px;}
+#prvtbtn.radio.private-shared{border-right: 0px;}
+.private-shared.radio {
+   background-color: white;
+   border-width: thin;
+   border-color: #9d0a0e;
+   border-style:solid;
+   color: #9d0a0e;
+}
+
+@media screen and (min-width: 359px) {
+}
+@media screen and (min-width: 374px) {
+}
+@media screen and (min-width: 411px) {
+  #map{
+    height:80vw;}
+}
+@media screen and (min-width: 490px) {
+  #map{
+    height:70vw;}
+}
+@media screen and (min-width: 767px) {
+  #map{
+    height:32vw;}
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+
+}

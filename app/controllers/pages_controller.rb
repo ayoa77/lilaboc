@@ -77,8 +77,21 @@ class PagesController < ApplicationController
       format.json { head :no_content }
     end
   end
+  def reserve
+  name = person_params[:name]
+  email=person_params[:email]
+  message = person_params[:message]
+  room = person_params[:room]
+  start = person_params[:start]
+  finish = person_params[:finish]
+  Mailer.reservation(name, email, message, room, start, finish).deliver
+end
 
   private
+
+  def person_params
+     params.require(:reserve).permit(:name, :email, :message, :room, :start, :finish)
+   end
     # Use callbacks to share common setup or constraints between actions.
     def set_page
       @page = Page.find(params[:id])

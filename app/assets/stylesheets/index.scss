@@ -1,7 +1,7 @@
-.box-up {
+.box-up.index {
     width: 409px;
     height: 409px;
-    left: -14%;
+    left: calc(-50% + 115.5px);
     bottom: -53%;
     position: relative;
     background-color: rgba(157, 10, 14, 0.5);
@@ -72,7 +72,7 @@
     overflow: hidden;
 }
 
-.row.var-rooms.open-row {
+.var-rooms.open-row {
     left: 160px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -80,17 +80,16 @@
     transition: 1s;
 }
 
-.row.var-rooms.closed-row {
+.var-rooms.closed-row {
     margin: 15px;
     height: 22%;
     transition: 1s;
 }
 
 .index-box {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     margin-left: -200px;
-    margin-top: -100px;
     background-color: rgba(0, 0, 0, 0.8);
     -o-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -101,7 +100,6 @@
 
 .index-box-text {
     left: -25%;
-    bottom: -34px;
     position: absolute;
     color: rgba(255, 255, 255, 0.9);
     font-family: 'lora', serif;
@@ -113,7 +111,7 @@
     padding: auto;
 }
 
-.row.hidden-index-text {
+.hiddenMobile.hidden-index-text {
     position: relative;
     display: none;
     font-family: 'lora', serif;
@@ -124,25 +122,25 @@
     background-color: rgb(211, 221, 241);
     transition: 1s;
 }
-.row.hidden-index-text.open-row {
+.hiddenMobile.hidden-index-text.open-row {
     left: 160px;
     margin-bottom: 15px;
     transition: 1s;
     margin-left: -15px;
     margin-right: -15px;
 }
-.row.hidden-index-text > p {
+.hiddenMobile.hidden-index-text > p {
     margin-left: 30px;
     left: -15px;
     line-height: 0.7;
     text-align: left;
 }
 
-.row.hidden-index-text > p:first-child {
+.hiddenMobile.hidden-index-text > p:first-child {
     padding-top: 10px;
 }
 
-.row.hidden-index-text > a {
+.hiddenMobile.hidden-index-text > a {
     color: black;
     text-align: right;
     position: absolute;
@@ -153,18 +151,6 @@
     display: block;
 }
 
-.private-index-img {
-    position: absolute;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-image: url("box-photos/photos(unedited)/24-Double-Bed-private-room.jpg");
-    opacity: 0.8;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
 .shared-index-img {
     position: absolute;
@@ -199,8 +185,20 @@
 #shared {}
 
 #common {}
+.private-index-img {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("box-photos/photos(unedited)/24-Double-Bed-private-room.jpg");
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 @media screen and (min-width: 359px) {
-    .box-up {
+    .box-up.index {
         left: -7%;
         bottom: -47%;
     }
@@ -210,9 +208,9 @@
     }
 }
 @media screen and (min-width: 374px) {
-    .box-up {
-        left: -4.5%;
-        bottom: -45.5%;
+    .box-up.index {
+    left: calc(-50% + 171px);
+    bottom: -45.5%;
     }
 
     .index-bg {
@@ -221,12 +219,11 @@
 
     .index-box-text {
         left: -27%;
-        bottom: -38px;
     }
 }
 @media screen and (min-width: 411px) {
-    .box-up {
-        left: 0;
+    .box-up.index {
+      left: 2px;
         bottom: -41%;
     }
 
@@ -236,24 +233,27 @@
 
     .index-box-text {
         left: -28%;
-        bottom: -48px;
     }
 
     .index-box {
         margin-left: -184px;
-        margin-top: -87px;
     }
 
-    .row.hidden-index-text > p:first-child {
+    .hiddenMobile.hidden-index-text > p:first-child {
         padding-top: 37px;
     }
 }
 @media screen and (min-width: 767px) {
-    .box-up {
+
+
+
+
+
+  .box-up.index {
         height: 800px;
         width: 800px;
         bottom: -43%;
-        left: -2.5%;
+            left:-16px;
     }
 
     .index-bg {
@@ -262,37 +262,41 @@
 
     .index-box {
         margin-left: -250px;
-        margin-top: -159px;
-        height: 500px;
-        width: 500px;
     }
 
     .index-box-text {
         left: -27%;
-        bottom: -75px;
     }
 
-    .row.hidden-index-text > p:first-child {
+    .hiddenMobile.hidden-index-text > p:first-child {
         padding-top: 47px;
     }
 
-    .row.hidden-index-text > p {
+    .hiddenMobile.hidden-index-text > p {
         margin-left: 95px;
         line-height: 1;
         margin-left: 95px;
     }
 
-    .row.hidden-index-text > a {
+    .hiddenMobile.hidden-index-text > a {
         bottom: 20%;
     }
 }
 @media screen and (min-width: 992px) {
-    /* Styles */
-    .box-up {
+    .private-index-img.top{
+      opacity:1;
+    }
+    .index-box.hidden{
+      display:none;
+    }
+    .index-box-text.hidden{
+      display:none;
+    }
+    .box-up.index {
         width: 1000px;
         height: 1000px;
         bottom: -41%;
-        left: 1.5%;
+          left: -16px;
     }
 
     .index-bg {
@@ -300,7 +304,7 @@
     }
 }
 @media screen and (min-width: 1200px) {
-    .box-up {
-        left: 15.5%;
+    .box-up.index {
+          left: -16px;
     }
 }

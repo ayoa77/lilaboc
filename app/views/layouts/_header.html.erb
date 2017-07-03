@@ -6,19 +6,19 @@
         <% end %>
     </div>
     <div id="home" class="col-sm-2 box-link">
-        <a href="/" class="navbar-link redText">Home</a>
+        <a href="/" class="navbar-link box-top redText">Home</a>
     </div>
     <div id="gallery" class="col-sm-2 box-link">
-        <a href="/gallery" class="navbar-link redText">Gallery</a>
+        <a href="/gallery" class="navbar-link box-top redText">Gallery</a>
     </div>
     <div id="reviews" class="col-sm-2 box-link">
-        <a href="/review" class="navbar-link redText">Reviews</a>
+        <a href="/review" class="navbar-link box-top redText">Reviews</a>
     </div>
     <div id="about" class="col-sm-2 box-link">
-        <a href="/about" class="navbar-link redText">About</a>
+        <a href="/about" class="navbar-link box-top redText">About</a>
     </div>
     <div id="contact" class="col-sm-2 box-link">
-        <a href="/contact" class="navbar-link redText">Contact Us</a>
+        <a href="/contact" class="navbar-link box-top redText">Contact Us</a>
     </div>
     <div id="nav-icon1" class=" open-burger col-sm-1">
       <span></span>
@@ -30,18 +30,19 @@
 <div id="m-nav" class="active active-inner">
   <nav class="nav">
     <ul>
-      <li><a href="/" class="navbar-link redText">Home</a></li>
-      <li><a href="/gallery" class="navbar-link redText">Gallery</a></li>
-      <li><a href="/review" class="navbar-link redText">Reviews</a></li>
-      <li><a href="/about" class="navbar-link redText">About</a></li>
-      <li><a href="/contact" class="navbar-link redText">Contact Us</a></li>
+      <li><a href="/" class="navbar-link redText"><img src="/assets/png 3/Home_Open.png" alt="">  Home</a></li>
+      <li><a href="/gallery" class="navbar-link redText"><img src="/assets/png 3/Photo.png" alt="">  Gallery</a></li>
+      <li><a href="/review" class="navbar-link redText"><img src="/assets/png 3/Review.png" alt="">  Reviews</a></li>
+      <li><a href="/about" class="navbar-link redText"><img src="/assets/png 3/Smile.png" alt="">  About</a></li>
+      <li><a href="/contact" class="navbar-link redText"><img src="/assets/png 3/Contact_Open.png" alt="">  Contact Us</a></li>
+      <li class="chocolate-menu"><img src="/assets/box_of_chocolates/illustrations/chocolate_square.png" alt=""></li>
     </ul>
   </nav>
 </div>
 <% if current_page?('/') %>
 <div class="index-bg">
 
-    <div class="box-up"></div>
+    <div class="box-up index"></div>
     <div class="over-box-text">
         <p>an international</p>
         <p>CO-LIVING HOUSE</p>
@@ -63,12 +64,18 @@
 
     <div class="box-up review"></div>
     <div class="over-box-text review">
-        <p><b>Life is like a</b></p>
-        <p><b>box of chocolates,</b></p>
-        <p><b>you never know what</b></p>
-        <p><b>you're gonna get.</b></p>
+        <div class="review-user">
+          <div class="homestar stars">
+            <i class="fa fa-star star-yellow" aria-hidden="true"></i>
+            <i class="fa fa-star star-yellow" aria-hidden="true"></i>
+            <i class="fa fa-star star-yellow" aria-hidden="true"></i>
+            <i class="fa fa-star star-yellow" aria-hidden="true"></i>
+            <i class="fa fa-star star-yellow" aria-hidden="true"></i>
+          </div>
+          <p></p>
+          <p class="hidden-md-down">"Even thought of living there for a semester"</p>
+          <p>-<b>Artemi-Daniliuk </b><small> from TripAdvisor</small></p>
     </div>
+  </div>
 </div>
 <% end %>
-
-<footer class="footer fixed-bottom"></footer>
