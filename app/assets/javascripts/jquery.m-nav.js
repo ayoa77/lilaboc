@@ -31,6 +31,7 @@ $(document).on('ready', function() {
 		$('.index-box').css('margin-left', textLeft);
 		$('.box-up.index').css('left', margins);
 		$('.box-up.review').css('left', margins);
+		$('.box-up').fadeIn();
 		$('#navbar').css('width', $windowSize);
 		$('.footer').css('width', $windowSize);
 		console.log(top);
