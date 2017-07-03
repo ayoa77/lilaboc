@@ -1,3 +1,4 @@
+.box-up{display:none;}
 .box-up.index {
     width: 409px;
     height: 409px;
@@ -109,6 +110,7 @@
     height: 100%;
     font-size: 1em;
     padding: auto;
+    transition:1s;
 }
 
 .hiddenMobile.hidden-index-text {
