@@ -1,1 +1,153 @@
-<h1>Contact</h1>
+<div id="map" class="contact-bg"></div>
+<div class="contact-container contact container">
+    <div class="contact-row">
+      <b>Get in Touch or Request a Reservation:</b>
+      <div class="btn-group dropdown">
+        <button id="contactSelector" type="button" class="btn btn-secondary">Reservation</button>
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <button id="reservationSelected" class="dropdown-item" type="button">Reservation</button>
+          <button id="commentSelected" class="dropdown-item" type="button">Comment</button>
+        </div>
+      </div>
+
+        <div class="contact-form contact row">
+            <div class="form-control contact col-lg-7">
+
+              <div id="commentForm" class="comment">
+               <%=form_tag '/comment' do%>
+               <div class="name email form-group form-inline">
+
+                   <input type="text" name="name" id="name" placeholder="Name" class="form-control name-email">
+                   <input type="email" name="email" id="email" class="form-control name-email" placeholder="Your email address">
+               </div>
+               <div class="textarea">
+
+                   <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+                   <button type="submit" class="contact button btn btn-primary form-control submit" name="button">Submit</button>
+
+               </div>
+                <%end%>
+
+              </div>
+                <div id="reserveForm" class="reservation selected">
+                    <!-- when to tell a form tag to end? -->
+                    <%= form_tag '/reserve' do %>
+                    <div class="form-group ">
+                        <!-- get buttons to check and uncheck radios -->
+                        <input type="hidden" name="room" id="privateRoom" value="Private Room" checked="unchecked">
+                        <button type="button" id="prvtbtn" for="privateRoom" class="private-shared form-control radio ">Private Room</button>
+                        <input type="hidden" name="room" id="sharedRoom" value="Shared Room" checked="unchecked">
+                        <button type="button" id="shrdbtn" for="sharedRoom" class="private-shared form-control radio">Shared Room</button>
+                    </div>
+                <div class="date_field form-group form-inline">
+
+
+                    <!-- <input type="date" name="finish" id="finish"> <input type="date" name="finish" id="finish"> -->
+                    <%= date_field_tag :start, params[:start], class:"form-control", id:"start"%>-
+                    <%= date_field_tag :finish, params[:finish], class:"form-control", id:"finish"%>
+                </div>
+                <div class="name email form-group form-inline">
+
+                    <input type="text" name="name" id="name" placeholder="Name" class="form-control name-email">
+                    <input type="email" name="email" id="email" class="form-control name-email" placeholder="Your email address">
+                </div>
+                <div class="textarea">
+
+                    <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+                </div>
+
+                <button type="submit" class="contact button btn btn-primary form-control submit" name="button">Submit</button>
+              </div>
+            </div>
+
+            <% end  %>
+            <div class="contact col-lg-5 mobile">
+                <div class="connect contact mobile">
+                    <div class="contact-info">
+
+                        <p>
+                            <b>Connect with us:</b>
+                        </p><br>
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        <p>
+                            LifeislikeaBOXofChocolatestw</p><br>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p>LifeislikeaBOXofChocolates@gmail.com</p><br>
+                        <img src="/assets/png 3/line-logo (1) 2.png" alt=""></img>
+                        <p>
+                            box23915809</p><br>
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        <p>+866.978.576.476</p><br>
+                        <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                        <p>
+                            106 12F,No.49, Sec.2
+                            <br>
+                            Roosevelt Rd. Da'an Dist.
+                            <br>
+                            Taipei, Taiwan (R.O.C)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="contact mobile-header">
+            <div class="additional-information row">
+                <p>Additional Information:</p>
+                <p>※ We have NO fixed reception open hours with flexible Check In/ Check Out times. Please inform us of your expected arrival time in advance, so that we can arrange a way to help you in.</p>
+                <p>※ To confirm your reservation: Please provide your flight number if you are coming directly from the airport/ your train or bus arrival schedule if you are coming from other cities in Taiwan.
+                </p>
+                <p>Please make the online reservation latest by 2 days before your arrival. If you have problems to make the online reservation 2 days earlier, please directly call us at +886-978-576467/ line: box23915809.</p>
+                <p>※ We can only accept CASH in New Taiwan Dollar upon checking-in.</p>
+                <p>※ Cancellation Policy: We have a 1-day cancellation policy. Failure to cancel within this time will result in a cancellation charge equal to the first night of your stay. Please inform us latest by 1 day before your arrival.</p>
+                <p>The perfect choice for your short-term Monthly Stay (30 days plus) in Taipei!!</p>
+
+            </div>
+
+        </div>
+        <script>
+            function initMap() {
+                var lilaboc = {
+                    lat: 25.027441,
+                    lng: 121.522445
+                };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: lilaboc
+                });
+                var icon = {
+                    url: '/assets/box_of_chocolates/map_marker.png', // url
+                    scaledSize: new google.maps.Size(20, 32), // scaled size
+                    animation: google.maps.Animation.DROP
+                };
+                var contentString = '<div id="content">'+
+                    '<div id="siteNotice">'+
+                    '</div>'+
+                    '<img src="/assets/box_of_chocolates/logo.png" style="width:50px;height:50px;margin-left: calc(50% - 25px);"alt=""></img>'+
+                    '<div id="bodyContent">'+
+                    '<p><b>Next to Guting MRT station Exit 6.</b> '+
+                      '<hr />'+
+                    'When you arrive at Guting MRT station <br />'+
+                    ' get off  at exit 6 and on your right side<br /> '+
+                    ' you will see McDonald\'s and JASONS<br />'+
+                    ' supermarket. Our front gate is right<br /> '+
+                    ' next to JASONS supermaket.'+
+                    '<hr />'+
+                    '12F No.49 Sec.2 Roosevelt Rd.</p>'+
+                    '<a href="https://www.google.com.tw/maps/place/%E7%9B%92+Life+is+like+a+BOX+of+Chocolates/@25.0274408,121.5202561,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a99a59758fed:0x71275b20767a02d!8m2!3d25.0274408!4d121.5224448">'+
+                    ' View Box on Google Maps</a>'
+                    '</div>'+
+                    '</div>';
+
+                var infowindow = new google.maps.InfoWindow({content: contentString});
+
+                var marker = new google.maps.Marker({position: lilaboc, map: map, icon: icon, title: 'Box of Chocolates Hostel'});
+                marker.addListener('click', function () {
+                    infowindow.open(map, marker);
+                });
+            }
+        </script>

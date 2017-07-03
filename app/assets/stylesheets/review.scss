@@ -1,6 +1,6 @@
 .box-up.review {
-    width: 75vw;
-    height: 75vw;
+    width: 65vw;
+    height: 65vw;
     left: 47%;
     bottom: 26%;
     position: relative;
@@ -14,17 +14,22 @@
 
 .over-box-text.review {
     bottom: 0;
-    right: 4vw;
     position: absolute;
     color: rgba(#000000, 1);
     font-family: 'lora', serif;
-    text-align: right;
+    text-align: center;
     line-height: 0.5;
-    width: 65%;
+    width: 53%;
     height: 65%;
     font-size: 1em;
     padding: auto;
     z-index: 21;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    line-height: 0.7;
+    font-size: 1.3em;
 }
 
 .index-bg.review {
@@ -35,66 +40,123 @@
     width: 100%;
     height: 50vw;
     overflow: hidden;
-    background-image: url("box-photos/photos(unedited)/Box-of-Chocolates.jpg");
+    background-image: url("box-photos/photos(unedited)/BOX-Movie-Night-01.jpg");
     opacity: 0.7;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.review-content{
-    background-color: rgb(211, 221, 241);
-}
-.row.review{
-  font-family: verdana
-}
-.row.review.chocolate-img img{
-  margin: 30px auto;
-  width: 111px;
-  height: 93px;
 
+.review-content {
+    background-color: rgb(220, 228, 252);
+    height: 450px;
+    overflow: hidden;
+    font-family: verdana;
 }
-.row.review.headline p{
-  color: black;
-  text-align: center;
+
+.review-content.selected {
+    height: auto;
 }
-.row.review b{
-  margin-top: 75px;
-  text-align: center;
-  font-size: 1.2em;
-  margin: 15px auto;
+
+.review-user p {
+    color: black;
+    text-align: center;
 }
-.row.review p{
-  font-size: 0.9em;
-  margin-bottom: 0;
-  margin-left: 40px;
-  margin-right: 40px;
-  text-align:left;
-  color: gray;
-  line-height: 2em;
+
+.review-content b {
+    margin-top: 75px;
+    text-align: center;
+    font-size: 1.4em;
+    margin: 15px auto;
+    font-family: 'lora', serif;
 }
-.container.review {
-top:-35px;
-height: auto;
-min-height: 100%;}
+
+.review-content p {
+    font-size: 0.9em;
+    margin-bottom: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: left;
+    color: gray;
+    line-height: 2em;
+}
+
+.review.quote {
+    text-align: center;
+}
+
+.review-content hr {
+    border-top: 1px solid gray;
+}
+
+.onehundred {
+    width: 100%;
+}
+
+.fa.fa-star {
+    color: rgb(255, 238, 83);
+}
+
+.diamond-filter {
+    width: 75px;
+    height: 75px;
+    margin: 25px;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    overflow: hidden;
+}
+
+.diamond-filter img {
+    width: 115px;
+    height: 115px;
+    margin: -25px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.container.review-container {
+    top: -90px;
+    height: auto;
+    min-height: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.row.review-row {
+    margin: 20px auto;
+}
+
+.review-content > .review-user p {
+    position: relative;
+    right: -50%;
+    margin-left: 0;
+    top: 60px;
+}
+
+  .row.review-content {
+      margin-top: 40px;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+
+.homestar.stars {
+    right: 0;
+    top: 0;
+}
+
+.stars {
+    position: relative;
+    right: -50%;
+    top: -60px;
+}
 @media screen and (min-width: 359px) {
-    .index-bg {
-        height: 180px;
-    }
 }
-@media screen and (min-width: 374px) {
-    .index-bg {
-        height: 187.5px;
-    }
-
-    .index-box-text {
-        left: -27%;
-        bottom: -38px;
-    }
-}
+@media screen and (min-width: 374px) {}
 @media screen and (min-width: 411px) {
     .over-box-text.review {
-        bottom: 0;
-        right: 7vw;
         line-height: 0.7;
         font-size: 1.3em;
     }
@@ -102,80 +164,62 @@ min-height: 100%;}
     .index-bg.review {
         height: 206px;
     }
-
-    .index-box-text {
-        left: -28%;
-        bottom: -48px;
-    }
-
-    .index-box {
-        margin-left: -184px;
-        margin-top: -87px;
-    }
-
-    .row.hidden-index-text > p:first-child {
-        padding-top: 37px;
-    }
 }
 @media screen and (min-width: 767px) {
+    .diamond-filter {
+        width: 100px;
+        height: 100px;
+    }
+
+    .diamond-filter img {
+        width: 145px;
+        height: 150px;
+    }
+
     .over-box-text.review {
-        bottom: 7%;
-        right: 11vw;
         line-height: 1;
         font-size: 1.7em;
     }
 
     .box-up.review {
-        height: 800px;
-        width: 800px;
         left: 53%;
-        bottom: 57%;
+        bottom: 17%;
     }
 
     .index-bg.review {
         height: 383.5px;
     }
-
-    .index-box {
-        margin-left: -250px;
-        margin-top: -159px;
-        height: 500px;
-        width: 500px;
-    }
-
-    .index-box-text {
-        left: -27%;
-        bottom: -75px;
-    }
-
-    .row.hidden-index-text > p:first-child {
-        padding-top: 47px;
-    }
-
-    .row.hidden-index-text > p {
-        margin-left: 95px;
-        line-height: 1;
-        margin-left: 95px;
-    }
-
-    .row.hidden-index-text > a {
-        bottom: 20%;
-    }
 }
 @media screen and (min-width: 992px) {
     /* Styles */
     .over-box-text.review {
-        bottom: 7%;
-        right: 11vw;
         line-height: 1;
         font-size: 1.7em;
     }
+    .row.review-content {
+        margin-top: 70px;
+    }
+
+    .review-content > .review-user p {
+        position: relative;
+        right: -25px;
+        margin-left: 0;
+        top: 200px;
+    }
+
+    .stars {
+        right: -25px;
+        top: 50px;
+    }
+
+    .review-content {
+        background-color: white;
+        height: auto;
+    }
 
     .box-up.review {
-        height: 800px;
-        width: 800px;
-    left: 64%;
-            bottom: 31%;
+        left: 64%;
+        bottom: 17%;
     }
 
     .index-bg.review {
@@ -184,16 +228,17 @@ min-height: 100%;}
 }
 @media screen and (min-width: 1200px) {
     .over-box-text.review {
-        bottom: 7%;
-        right: 11vw;
         line-height: 1;
         font-size: 1.7em;
     }
 
     .box-up.review {
-        height: 800px;
-        width: 800px;
-            left: 64%;
-        bottom: 31%;
+        left: 64%;
+        bottom: 40%;
+    }
+}
+@media screen and (min-width: 1700px) {
+    .box-up.review {
+        bottom: 110%;
     }
 }

@@ -1,8 +1,8 @@
-
+.carousel{overflow: hidden;}
 #gallery.content.gallery.grids {
-  max-width: 1050px;
-  max-height: 2500px;
-  margin-left: 70px;
+  max-width: 900px;
+  max-height: 3200px;
+  margin-left: calc(50% - 450px);
 }
 
 .boxes.gallery.image.grid-item {
@@ -36,6 +36,7 @@
 }
 
 .carousel-container {
+  overflow: hidden;
     background-color: rgb(41, 43, 47);
     position: relative;
     top: -35px;
@@ -105,20 +106,14 @@ body.carousel {
     width: 75px;
     height: 75px;
 }
-
-thumb-carousel {
-    margin-right: 10px;
-}
-
 .item.boxes.gallery.image img {
     border-width: medium;
     border-color: rgb(182, 182, 182);
     border-style: solid;
 }
 
-slick-list {
-    margin: 0 10px 10px;
-}
+.slick-list {
+overflow-y: hidden;}
 .slick-next.ajabutton {
   color:rgb(198, 236, 254);
   position: absolute;
@@ -131,6 +126,7 @@ position: absolute;
 left:-38px;
 top:24px;
 }
+#navbar.navigation-gallery {width:auto}
 @media screen and (min-width: 359px) {
     .boxes.gallery.image img {
         width: 85px;
@@ -221,7 +217,7 @@ top:24px;
     .slider-for {
       left: calc(50% - 300px);
         width: 600px;
-        top: 45px;
+        top: 42px;
     }
 
     .slick-list {
@@ -264,5 +260,13 @@ top: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .ajabutton {
+    background-color: rgb(41, 43, 47);
+
+  border-color: rgb(41, 43, 47);
+  border-style: solid;
+}
+
+
   .content.gallery.grid {margin-left: 0px;}
 }

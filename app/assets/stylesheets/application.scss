@@ -16,39 +16,58 @@
 @import "bootstrap";
 
 html {
-  position: relative;
-  min-height: 100%;
+    min-height: 100%;
     overflow-y: scroll;
     height: 100%;
     width: 100%;
+    position: relative;
+    // box-sizing: border-box;
 }
+//
+// *,
+// *:before,
+// *:after {
+//   box-sizing: inherit;
+// }
 
 body {
-  height: 100vh;
+    height: 100vh;
     min-height: 100vh;
     width: 100%;
     font-size: 100%;
     font-family: helvetica;
     background: #ffffff;
     margin-top: 70px;
-    margin-bottom: 82.5px;
-  }
-  body.height-important{
-    height:auto;
-  }
+    min-height: 100%;
+margin-bottom: 70px;
+}
+
+body.height-important {
+  min-height: 100%;
+height: auto;
+margin-bottom: 70px;
+}
 
 .m-nav {
     display: block;
 }
 // needs to be adapted to work with safari and IE
-#navbar{pointer-events: none;
-  background: linear-gradient(180deg, rgba(248, 229, 183, 0) 50%, transparent 50%);
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+
+#navbar {
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(248, 229, 183, 0) 50%, transparent 50%);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
-#red-logo, #nav-icon1, .box-link, .box-logo{pointer-events: auto}
+
+#nav-icon1,
+#red-logo,
+.box-link,
+.box-logo {
+    pointer-events: auto;
+}
 
 #mobile-header {
     display: none;
@@ -75,6 +94,7 @@ body {
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
+
 #navbar.navigation-gallery {
     height: 70px;
     background: linear-gradient(180deg, rgba(248, 229, 183, 1) 50%, transparent 50%);
@@ -85,7 +105,7 @@ body {
 }
 
 .open-logo {
-    left: 38px;
+    left: 75px;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
@@ -95,11 +115,11 @@ body {
 .open-burger {}
 
 .open-body {
-  left: 160px;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+    left: 160px;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 #nav-icon1 {
@@ -249,9 +269,18 @@ body {
     }
 }
 
-a.redText {
+a.box-top.redText {
     text-transform: uppercase;
     color: #9d0a0e;
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 1em;
+    top: -4vh;
+}
+
+a.redText {
+  color: #9d0a0e;
+
     font-weight: bold;
     font-family: verdana;
     font-size: 1em;
@@ -277,13 +306,16 @@ a.redText:hover {
     left: 50%;
 }
 
-.chocolatesqr{
-content:url(app/assets/images/box_of_chocolates/illustrations/chocolate_square.png)
+.chocolatesqr {
+    content: url("app/assets/images/box_of_chocolates/illustrations/chocolate_square.png");
 }
 
 footer {
+    position: absolute;
+    right: 0;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    width: auto;
     background-color: #f8e5b7;
 }
 
@@ -293,7 +325,7 @@ hr {
     border: 0;
     border-top: 1px solid #303030;
     padding: 0;
-    width:70%;
+    width: 70%;
     z-index: -1;
 }
 
@@ -337,7 +369,7 @@ html {
     }
 }
 @media screen and (max-width: 769px) {
-  #nav-icon1 {
+    #nav-icon1 {
         display: block;
     }
 
@@ -346,19 +378,22 @@ html {
     }
 }
 @media screen and (min-width: 768px) {
-  footer{
-    height: 82.5px;
-  }
-  body:{
-    margin-bottom: 165px;
-  }
-  html {
-    font-size: 16px;
-  }
-.col-sm-2.box-link{
-  left: -15px;
-  top: 15px;
-}
+    footer {
+        height: 82.5px;
+    }
+    body: {
+        margin-bottom: 165px;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    .col-sm-2.box-link {
+        left: -15px;
+        top: 15px;
+    }
+
     .box-link {
         transform: translate(0, -40px);
     }
@@ -373,17 +408,25 @@ html {
     }
 }
 @media screen and (min-width: 799px) {
-  #navbar.navigation-scroll {
-      height: 100px;}
-    #navbar.navigation-gallery{
-        height: 100px;}
-      }
+    #navbar.navigation-scroll {
+        height: 100px;
+    }
 
+    #navbar.navigation-gallery {
+        height: 100px;
+    }
+}
 @media screen and (min-width: 992px) {
-  #navbar.navigation-scroll {
-      height: 130px;}
-  #navbar.navigation-gallery {
-      height: 130px;}
+    #navbar.navigation-scroll {
+        height: 130px;
+    }
+
+    #navbar.navigation-gallery {
+        height: 130px;
+    }
+    body {
+      margin-bottom: 200px;
+    }
 
     html {
         font-size: 18px;
@@ -403,17 +446,20 @@ html {
     }
 }
 @media screen and (min-width: 1200px) {
-  #navbar.navigation-scroll {
-      height: 157px;
+    #navbar.navigation-scroll {
+        height: 157px;
     }
+
     #navbar.navigation-gallery {
         height: 157px;
-      }
+    }
+
     html {
         font-size: 20px;
     }
-    .col-sm-2.box-link{
-      left: -50px;
+
+    .col-sm-2.box-link {
+        left: -50px;
     }
 
     .box-link {

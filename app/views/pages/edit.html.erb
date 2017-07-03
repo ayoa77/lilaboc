@@ -1,76 +1,54 @@
-<div class="carousel-container">
+<div class="container var-amenities">
+    <div class="row var-rooms closed-row">
+        <div id="private" class="private-index-img">
+            <div class="index-box"></div>
+            <div class="index-box-text">
+                <p>Private Rooms</p>
+            </div>
+          </div>
+        </div>
+            <div id="private-text" class="row hidden-index-text">
+                <p>Lorem ipsum dolor sit amet,</p>
+                <p>consectetur adipiscing elit. Fusce</p>
+                <p>eget est leo. Class aptent taciti</p>
+                <p>sociosqu ad litora torquent.</p>
+                <a href="/contact">
+                    <b>Reserve Now ></b>
+                </a>
+              </div>
+        <div class="row var-rooms closed-row">
+            <div id="shared" class="shared-index-img">
+                <div class="index-box"></div>
+                <div class="index-box-text">
+                    <p>Shared Rooms</p>
+                </div>
+              </div>
+            </div>
+                <div id="shared-text" class="row hidden-index-text">
+                    <p>Lorem ipsum dolor sit amet,</p>
+                    <p>consectetur adipiscing elit. Fusce</p>
+                    <p>eget est leo. Class aptent taciti</p>
+                    <p>sociosqu ad litora torquent.</p>
+                    <a href="/contact">
+                        <b>Reserve Now ></b>
+                    </a>
+                  </div>
 
-    <div class='slider-for'>
-
-        <div><%= image_tag 'box-photos/photos(unedited)/01-common-space-1.jpg', class:"big-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/02-Common-Space-2.jpg', class:"big-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/03-Common-Space-3.jpg', class:"big-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/04-Study-Table.jpg', class:"big-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/05-Kitchen-1.jpg', class:"big-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/06-Kitchen-2.jpg', class:"big-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/07-FREE-Breakfast.jpg', class:"big-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/08-Coin-Operated-Laundry.jpg', class:"big-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/09-Shared-Bathroom-1.jpg', class:"big-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/10-Shared-Bathroom-2.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/11-Shared-Bathroom-3.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/12-8-Bed-Dorm.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/13-Outside-Facing-Windows-1.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/14-in-room-Lockers-1.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/15-Privacy-Curtains-1.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/16-Privacy-Curtains-2.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/17-Reading-Light-1.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/18-in-room-Lockers-2.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/19-6-Bed-Dorm.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/20-Outside-Facing-Windows-2.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/21-Sockets.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/22-Storage-Box-1.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/23-Storage-Box-2.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/24-Double-Bed-private-room.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/25-Balcony-View-sunrise.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/26-Balcony-View-rainbow.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/27-Balcony-View-full-moon.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/28-Family-Dinner.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/29-Board-Game-Night.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/30-Dinner-Event.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/31-Movie-Night.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/BOX-Movie-Night-01.jpg', class:"big-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/Box-of-Chocolates.jpg', class:"big-carousel"%></div>
-    </div>
-    <div class="slider-nav carousel-nav">
-
-        <div><%= image_tag 'box-photos/photos(unedited)/01-common-space-1.jpg', class:"thumb-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/02-Common-Space-2.jpg', class:"thumb-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/03-Common-Space-3.jpg', class:"thumb-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/04-Study-Table.jpg', class:"thumb-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/05-Kitchen-1.jpg', class:"thumb-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/06-Kitchen-2.jpg', class:"thumb-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/07-FREE-Breakfast.jpg', class:"thumb-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/08-Coin-Operated-Laundry.jpg', class:"thumb-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/09-Shared-Bathroom-1.jpg', class:"thumb-carousel"%></div>
-        <div><%= image_tag 'box-photos/photos(unedited)/10-Shared-Bathroom-2.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/11-Shared-Bathroom-3.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/12-8-Bed-Dorm.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/13-Outside-Facing-Windows-1.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/14-in-room-Lockers-1.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/15-Privacy-Curtains-1.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/16-Privacy-Curtains-2.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/17-Reading-Light-1.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/18-in-room-Lockers-2.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/19-6-Bed-Dorm.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/20-Outside-Facing-Windows-2.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/21-Sockets.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/22-Storage-Box-1.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/23-Storage-Box-2.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/24-Double-Bed-private-room.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/25-Balcony-View-sunrise.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/26-Balcony-View-rainbow.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/27-Balcony-View-full-moon.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/28-Family-Dinner.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/29-Board-Game-Night.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/30-Dinner-Event.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/31-Movie-Night.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/BOX-Movie-Night-01.jpg', class:"thumb-carousel"%></div>
-        <div ><%= image_tag 'box-photos/photos(unedited)/Box-of-Chocolates.jpg', class:"thumb-carousel"%></div>
-
-    </div>
-</div>
+            <div class="row var-rooms closed-row">
+                <div id="common" class="common-index-img">
+                    <div class="index-box"></div>
+                    <div class="index-box-text">
+                        <p>Common Room</p>
+                    </div>
+                  </div>
+                </div>
+                    <div id="common-text" class=" row hidden-index-text">
+                        <p>Lorem ipsum dolor sit amet,</p>
+                        <p>consectetur adipiscing elit. Fusce</p>
+                        <p>eget est leo. Class aptent taciti</p>
+                        <p>sociosqu ad litora torquent.</p>
+                        <a href="/contact">
+                            <b>Reserve Now ></b>
+                        </a>
+                      </div>
+        </div>
