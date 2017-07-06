@@ -9,7 +9,7 @@
         </button>
         <div class="dropdown-menu">
           <button id="reservationSelected" class="dropdown-item" type="button">Reservation</button>
-          <button id="commentSelected" class="dropdown-item" type="button">Comment</button>
+          <button id="commentSelected" class="dropdown-item" type="button">Questions or Comments</button>
         </div>
       </div>
 
@@ -20,9 +20,10 @@
                <%=form_tag '/comment' do%>
                <div class="name email form-group form-inline">
 
-                   <input type="text" name="name" id="name" placeholder="Name" class="form-control name-email">
-                   <input type="email" name="email" id="email" class="form-control name-email" placeholder="Your email address">
+                   <input type="text" name="name" id="name" placeholder="Name" class="form-control name-email" required="required">
+                   <input type="email" name="email" id="email" class="form-control name-email" placeholder="Your email address" required="required">
                </div>
+
                <div class="textarea">
 
                    <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
@@ -33,7 +34,6 @@
 
               </div>
                 <div id="reserveForm" class="reservation selected">
-                    <!-- when to tell a form tag to end? -->
                     <%= form_tag '/reserve' do %>
                     <div class="form-group ">
                         <!-- get buttons to check and uncheck radios -->
@@ -46,9 +46,31 @@
 
 
                     <!-- <input type="date" name="finish" id="finish"> <input type="date" name="finish" id="finish"> -->
-                    <%= date_field_tag :start, params[:start], class:"form-control", id:"start"%>-
+                    <%= date_field_tag :start, params[:start], class:"form-control", id:"start"%><span class="hidden-sm-down">-</span>
                     <%= date_field_tag :finish, params[:finish], class:"form-control", id:"finish"%>
                 </div>
+                <div class="phone nationality form-group form-inline">
+
+                    <input type="text" name="nationality" id="name" placeholder="Nationality" class="form-control name-email">
+                    <div class="col-xs-4">
+                                    <div class="form-group phone-number">
+                                        <div class="col-xs-3">
+                                            <input type="tel" name="phone" class="form-control" value="" size="4" maxlength="4" placeholder="+886" title="tel1">
+                                        </div><span class="hidden-sm-down">-</span>
+                                        <div class="col-xs-3">
+                                            <input type="tel" name="phone" class="form-control" value="" size="3" maxlength="3" placeholder="097" required="required" title="tel2">
+                                        </div><span class="hidden-sm-down">-</span>
+                                        <div class="col-xs-3">
+                                            <input type="tel" name="phone" class="form-control" value="" size="3" maxlength="3" placeholder="123" required="required" title="tel3">
+                                        </div><span class="hidden-sm-down">-</span>
+
+
+                                        <div class="col-xs-3">
+                                            <input type="tel" name="phone" class="form-control" value="" size="4" maxlength="4" placeholder="4567" required="required" title="tel4">
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
                 <div class="name email form-group form-inline">
 
                     <input type="text" name="name" id="name" placeholder="Name" class="form-control name-email">
@@ -70,17 +92,19 @@
 
                         <p>
                             <b>Connect with us:</b>
-                        </p><br>
+                        </p><br> <a href="https://www.facebook.com/LifeislikeaBOXofChocolatestw/">
                         <i class="fa fa-facebook-square" aria-hidden="true"></i>
                         <p>
-                            LifeislikeaBOXofChocolatestw</p><br>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <p>LifeislikeaBOXofChocolates@gmail.com</p><br>
+                            LifeislikeaBOXofChocolatestw</p></a><br>
+                             <a href="mailto:LifeislikeaBOXofChocolates@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>
+                             <p>LifeislikeaBOXofChocolates@gmail.com</p></a>            <br>
+
                         <img src="/assets/png 3/line-logo (1) 2.png" alt=""></img>
                         <p>
                             box23915809</p><br>
+                            <a href="tel:+866-978-576-476">
                         <i class="fa fa-phone-square" aria-hidden="true"></i>
-                        <p>+866.978.576.476</p><br>
+                        <p>+866.978.576.476</p><br></a>
                         <i class="fa fa-location-arrow" aria-hidden="true"></i>
                         <p>
                             106 12F,No.49, Sec.2

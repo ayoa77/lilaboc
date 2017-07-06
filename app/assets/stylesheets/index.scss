@@ -12,6 +12,7 @@
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5);
     /*for IE*/
 }
+.firstP{padding-top: 25px;}
 
 .over-box-text {
     bottom: -43%;
@@ -68,11 +69,14 @@
     transition: 1s;
 }
 
+
 .var-rooms.closed-row {
     margin: 15px;
-    height: 22%;
-    transition: 1s;
+    height: 30%;
+    transition: 0.9s;
 }
+.var-rooms.closed-row.top {height:30%}
+.var-rooms.closed-row.bottom{ height:30%;   width: 100%;}
 
 .index-box {
     width: 500px;
@@ -118,7 +122,7 @@
     right: 10%;
 }
 
-.hidden-index-text.show-text {
+.hiddenMobile.hidden-index-text.show-text {
     display: block;
 }
 
@@ -135,8 +139,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    transition: 1s;
 }
-
+.shared-index-img:hover{
+  opacity: 1;
+}
 .common-index-img {
     position: absolute;
     margin-left: 0;
@@ -150,12 +157,20 @@
     background-position: center;
     background-size: cover;
 }
+.common-index-img:hover{
+  opacity: 1;
+}
+.private-index-img:hover{
+  opacity: 1;
+}
 
-#private {}
+#private {transition:1s;}
 
-#shared {}
+#shared {transition:1s;}
 
-#common {}
+#common {transition:1s;}
+.bottom.row{height:100%;}
+
 .hiddenMobile.hidden-index-text {
   position: relative;
   display: none;
@@ -271,14 +286,33 @@
     }
 }
 @media screen and (min-width: 992px) {
+  .var-rooms.closed-row.top {height:37%}
+  .var-rooms.closed-row{ height:33%;   width: 100%;}
+
+  #topdiv{margin-top: 20px;}
+
     .private-index-img.top{
       opacity:1;
     }
+    .shared-index-img.top{
+      opacity:1;
+    }
+    .common-index-img.top{
+      opacity:1;
+    }
     .roomColumn.col-lg-6{
-      height:33%;
+      height:100%;
         width: 100%;}
-      .first.roomColumn.col-lg-6{padding-left: 0px;}
-      .second.roomColumn.col-lg-6{padding-right:0px;}
+        .bottom.row{height:100%;}
+        .index-box.large{left:0;
+        top:0;
+        margin-left: auto;
+        margin-right:auto;
+        margin-top:48px;
+        display:none;
+      }
+      .index-box-text.large{left:0px;
+      top:152px;}
 
     .hiddenMobile.hidden-index-text.top {
 display:block;
@@ -286,30 +320,22 @@ background-color:white;
 margin-top: 0px;
 margin-left: 0px;
 margin-right: 0px;
-height: 33%;
+height: 37%;
     }
     .hiddenMobile.hidden-index-text.top > p {
         line-height: 0.7;
         margin-left: 30px;
-    }
-    .hiddenMobile.hidden-index-text.top > p:first-child {
-        padding-top: 20px;
     }
     .hiddenMobile.hidden-index-text > a {
         bottom: 55%;
 right: 0%;
 font-size: medium;
     }
-.var-rooms.closed-row.top {height:33%}
-.var-rooms.closed-row{ height:33%;   width: 100%;}
     .index-box.hidden{
       display:none;
     }
     .index-box-text.hidden{
       display:none;
-    }
-    .var-rooms.closed-row {
-        height: 100%;
     }
     .box-up.index {
         width: 1000px;

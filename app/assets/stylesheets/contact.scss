@@ -16,6 +16,29 @@
 background-color: rgb(157, 157, 157);
 color:rgb(157, 10, 14);
 }
+.phone-number .col-xs-3::after{
+ content: "";
+ position:absolute;
+    right: 5px;
+    color: black;
+    border: 0px solid;
+    top: 5px;
+}
+.contact-info > a{
+  color:rgb(157, 10, 14);
+}
+.contact-info > a:hover{
+opacity: 0.8;
+text-decoration:underline;
+}
+.phone-number .col-xs-4{
+	width:25%;
+}
+
+.phone-number .col-xs-3, .phone-number .col-xs-4{
+
+	padding-left:0;
+}
 
 .contact.mobile{
   position:relative;

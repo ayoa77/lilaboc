@@ -26,7 +26,7 @@
       <span></span>
     </div>
 </nav>
-<!-- mobile navbar -->
+<!-- mobile navbar --><div id="navScreen" class="navScreen">
 <div id="m-nav" class="active active-inner">
   <nav class="nav">
     <ul>
@@ -39,7 +39,10 @@
     </ul>
   </nav>
 </div>
+<div id="overlay" class=""></div>
+</div>
 <% if current_page?('/') %>
+<div id="loadingDiv"></div>
 <div class="index-bg">
 
     <div class="box-up index"></div>
@@ -64,7 +67,7 @@
 
     <div class="box-up review"></div>
     <div class="over-box-text review">
-        <div class="review-user">
+        <div class="top-review-user">
           <div class="homestar stars">
             <i class="fa fa-star star-yellow" aria-hidden="true"></i>
             <i class="fa fa-star star-yellow" aria-hidden="true"></i>
@@ -78,4 +81,6 @@
     </div>
   </div>
 </div>
+<% elsif current_page?('/gallery') %>
+<div id="loadingDiv"></div>
 <% end %>
