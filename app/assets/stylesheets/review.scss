@@ -4,18 +4,18 @@
     left: 47%;
     bottom: 26%;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     -o-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5);
     /*for IE*/
 }
-
+.top-review-user{color: white }
 .over-box-text.review {
     bottom: 0;
     position: absolute;
-    color: rgba(#000000, 1);
+    color: white;
     font-family: 'lora', serif;
     text-align: center;
     line-height: 0.5;
